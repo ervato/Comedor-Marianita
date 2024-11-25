@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Favicon y theme color-->
+    <link rel="icon" href="https://eltrendelsaber.edu.mx/wp-content/uploads/2017/08/comedor.png" type="image/png">
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#ca0b0b">
+    <!--OPEN GRAPH / pendiente-->
+    <meta >
+    <!--GOOGLE FONTS-->
+    <!--Nunito-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <!--Fjalla one-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    
+    <title>Comedor Marianita - Menú diario</title>
+    <link rel="stylesheet" href="styless.css">
+</head>
+<body>
+    <header>
+        <h1>Bienvenidos a<br> Comedor<br> Marianita</h1>
+        <p>
+            <B>SABEMOS LO QUE TE GUSTA</B><br>
+            ¡Descubre nuestro menú diario y haz tu pedido!
+            <img src="https://st2.depositphotos.com/5963850/8839/v/450/depositphotos_88396538-stock-illustration-menu-chef-food-background.jpg" alt="Logo chef">
+        </p>
+    </header>
+    <section id="menu">
+        <h2>Menú del día</h2>
+        <div id="menu-items">
+            <!-- Aquí se cargará el menú dinámicamente desde Firebase o se pondrá manualmente -->
+             <ul style="list-style: none; padding: 0; margin: 0;">
+                <li><strong>Plato: 1</strong> Comida 1</li>
+                <li><strong>Plato: 2</strong> Comida 2</li>
+                <li><strong>Plato: 3</strong> Comida 3</li>
+             </ul>
+        </div>
+    </section>
+
+    <section id="bebidas">
+    <aside>
+        <h2>Bebidas</h2>
+        <div id="bebidas-items">
+            <!-- Aquí se cargará las bebidas dinámicamente desde Firebase o se pondrá manualmente -->
+             <ul style="list-style: none; padding: 0; margin: 0;">
+                <li><strong>Jugos</li>
+                <li><strong>Café / Té</li>
+                <li><strong>Quaker</li>
+             </ul>
+        </div>
+    </aside>
+    </section>
+
+    <section id="pedido">
+        <h2>Haz tu pedido</h2>
+        <form id="orderForm">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required><br>
+
+            <label for="plato">Selecciona tu plato:</label>
+            <select id="plato" name="plato" required>
+                <option value="Comida">Comida 1</option>
+                <option value="Comida">Comida 2</option>
+                <option value="Comida">Comida 3</option>
+            </select><br>
+
+            <label for="cantidad">Cantidad:</label>
+            <input type="number" id="cantidad" name="cantidad" required><br><br>
+
+            <button type="submit">Enviar pedido</button> 
+        </form>
+    </section>
+
+    <footer>
+        <p>¡Gracias por elegirnos!</p>
+    </footer> 
+</body>  
+</html>
